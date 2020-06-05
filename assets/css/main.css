@@ -2889,7 +2889,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 5em 0 0.1em 0 ;
 	}
 
 		#header .logo {
@@ -2902,7 +2902,7 @@ input, select, textarea {
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
-			font-size: 1.5em
+			font-size: 1em
 		}
 
 			#header .logo > * {
