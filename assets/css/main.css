@@ -2969,41 +2969,40 @@ input, select, textarea {
 						letter-spacing: 0.35em;
 						text-transform: uppercase;
 					}
+		
+					.nav > li:hover, 
+					.nav > li:hover > a { 
+					border-bottom-color: orange;
+					}
+					.nav li:hover > a { 
+					color:orange; 
+					}
+					.nav > li:first-child { 
+					border-radius: 4px 0 0 4px;
+					} 
+					.nav > li:first-child > a { 
+					border-radius: 4px 0 0 0;
+					}
+					.nav > li:last-child { 
+					border-radius: 0 0 4px 0; 
+					margin-right: 0;
+					} 
+					.nav > li:last-child > a { 
+					border-radius: 0 4px 0 0;
+					}
+					.nav li li a { 
+					margin-top: 1px;
+					}
 
-					nav > ul > li > a {
-						color: #aaa;
-						display: block;
-						line-height: 2em;
-						padding: 0.5em 2em;
-						text-decoration: none;
-					
-					}
-					
-					nav li > ul{
-						  background-color: #bbb;
-						display: none;
-						margin-top: 1px;
-					}
-					
-					nav li:hover ul{
-						display: block;
-					}
-					
-					nav  li > ul li a {
-						color: #111;
-						display: block;
-						line-height: 2em;
-						padding: 0.5em 2em;
-						text-decoration: none;
-					}
-					
-					nav li:hover {
-						background-color: #666;
-					}
-					nav li:hover > ul{
-						position:absolute;
-						display : block;
-					}
+					.nav li a:first-child:nth-last-child(2):before { 
+						content: ""; 
+						position: absolute; 
+						height: 0; 
+						width: 0; 
+						border: 5px solid transparent; 
+						top: 50% ;
+						right:5px;  
+					   }
 
 				
 
