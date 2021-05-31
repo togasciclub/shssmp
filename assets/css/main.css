@@ -2970,6 +2970,41 @@ input, select, textarea {
 						text-transform: uppercase;
 					}
 
+					nav > ul > li > a {
+						color: #aaa;
+						display: block;
+						line-height: 2em;
+						padding: 0.5em 2em;
+						text-decoration: none;
+					
+					}
+					
+					nav li > ul{
+						  background-color: #bbb;
+						display: none;
+						margin-top: 1px;
+					}
+					
+					nav li:hover ul{
+						display: block;
+					}
+					
+					nav  li > ul li a {
+						color: #111;
+						display: block;
+						line-height: 2em;
+						padding: 0.5em 2em;
+						text-decoration: none;
+					}
+					
+					nav li:hover {
+						background-color: #666;
+					}
+					nav li:hover > ul{
+						position:absolute;
+						display : block;
+					}
+
 				
 
 		@media screen and (max-width: 736px) {
