@@ -28,11 +28,15 @@
 								</a>
 									<ul>
 										<li><a href="https://togasciclub.github.io/shssmp/index.html">Home</a></li>
-										<li><a href="">Mentors</a>
-											<ul>
-												<li><a href="https://togasciclub.github.io/shssmp/mentors2020.html">Mentors 2020</a></li>
-												<li><a href="https://togasciclub.github.io/shssmp/mentors2021.html">Mentors 2021</a></li>
-											</ul>
+										<li><div class="dropdown">
+											<button onclick="myFunction()" class="dropbtn">Mentors</button>
+												<div id="myDropdown" class="dropdown-content">
+													<ul>
+														<li><a href="https://togasciclub.github.io/shssmp/mentors2020.html">Mentors 2020</a></li>
+														<li><a href="https://togasciclub.github.io/shssmp/mentors2021.html">Mentors 2021</a></li>
+													</ul>
+												</div>
+											</div>
 										</li> 
 										<li><a href="https://togasciclub.github.io/shssmp/timeline.html">Timeline</a></li>
 									</ul>
@@ -116,6 +120,31 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+
+
+			<script>
+				/* When the user clicks on the button, 
+				toggle between hiding and showing the dropdown content */
+				function myFunction() {
+				  document.getElementById("myDropdown").classList.toggle("show");
+				}
+				
+				// Close the dropdown if the user clicks outside of it
+				window.onclick = function(event) {
+				  if (!event.target.matches('.dropbtn')) {
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+					  var openDropdown = dropdowns[i];
+					  if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					  }
+					}
+				  }
+				}
+				</script>
+
+
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
